@@ -221,7 +221,6 @@ def main():
             print(f"  - {s}")
 
     print("\nFinsh! 🎉")
-    os.remove(./token.json)
 
 if __name__ == "__main__":
     main()
