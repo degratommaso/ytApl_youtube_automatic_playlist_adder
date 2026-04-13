@@ -18,7 +18,7 @@ pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
 5. In **OAuth consent screen → Test users**, add your Google account
 
 ### 2. Configure the playlist
-Edit `ytApl.py` at row :30 and set your `PLAYLIST_ID`. You can find it in the playlist URL:
+Edit `ytApl.py` at row `30` and set your `PLAYLIST_ID`. You can find it in the playlist URL:
 `https://www.youtube.com/playlist?list=`**`YOUR_PLAYLIST_ID`**
 
 ### 3. Add your songs
