@@ -5,7 +5,7 @@ A Python script that searches for a list of songs on YouTube and automatically a
 ## Requirements
 
 ```bash
-pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib python-dotenv
+pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
 ```
 
 ## Setup
@@ -18,10 +18,7 @@ pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib p
 5. In **OAuth consent screen → Test users**, add your Google account
 
 ### 2. Configure the playlist
-```bash
-cp .env.example .env
-```
-Edit `.env` and set your `PLAYLIST_ID`. You can find it in the playlist URL:
+Edit `ytApl.py` at row :30 and set your `PLAYLIST_ID`. You can find it in the playlist URL:
 `https://www.youtube.com/playlist?list=`**`YOUR_PLAYLIST_ID`**
 
 ### 3. Add your songs
@@ -37,7 +34,7 @@ Stairway to Heaven Led Zeppelin
 ## Usage
 
 ```bash
-python3 youtube_playlist_adder.py
+python3 ytApl.py
 ```
 
 On first run, a browser window will open for Google login. The token is saved to `token.json` for subsequent runs.
@@ -46,10 +43,8 @@ On first run, a browser window will open for Google login. The token is saved to
 
 ```
 .
-├── youtube_playlist_adder.py   # main script
+├── ytApl.py                    # main script
 ├── songs.txt                   # your song list
 ├── client_secret.json          # OAuth credentials (do NOT commit)
-├── token.json                  # auto-generated after first login (do NOT commit)
-├── .env                        # your playlist ID (do NOT commit)
-└── .env.example                # template for .env
+└── token.json                  # auto-generated after first login (do NOT commit)
 ```
