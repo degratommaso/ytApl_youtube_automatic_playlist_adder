@@ -221,7 +221,7 @@ def main():
             print(f"  - {s}")
 
     print("\nFinsh! 🎉")
-    os.remove(percorso_file)
+    os.remove(./token.json)
 
 if __name__ == "__main__":
     main()
